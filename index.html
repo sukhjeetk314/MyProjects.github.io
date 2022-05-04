@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head> 
+        <meta charset="UTF-8" />
+        <title>Assignment#3 by Sukhjeet kaur(C0810669)</title> <!--it provides title to this coding-->
+        <link rel="stylesheet" href="css/style.css">  <!--it is link address of css folder to apply styles from style.css -->
+    </head> 
+        <body>  
+      <div id="first"> <!--div tag with id "first" selector through which styles are applied-->
+      <h1>
+        CheckFirstCharacter  <!--header caption in h1 tag-->
+      </h1> 
+       
+      <h2>Write some text here:</h2>  <input id = "val" type="text" name="input"/> 
+      <br><br><button class ="btn" onclick="CheckFirstChar_669()"> <!--it is button that will call the function in javascript to display output-->
+          Click Here
+      </button> 
+
+      <h3 id = "output"></h3> <!--output will be displayed in h3 format and this id selector applies styling-->
+
+      
+            <!-- Used the footer area to add footer content at end-->
+      <footer id="end">
+        &copy; Copyright 2021. All Rights Reserved by Sukhjeet kaur (c0810669@mylambton.ca)<br>
+         </footer> 
+          </div>
+        
+        <script> //javascript coding
+          function CheckFirstChar_669() {   //function that is called on clicking button
+           let char_669 = document.getElementById("val").value;  //declared variable char_669
+           let f_char = char_669.charAt(0);  //declared second variable f_char that will accept first index value from string
+           document.getElementById("output").innerHTML = f_char; 
+          
+           //if first character in string is in uppercase, it will display message
+           if(f_char >= 'A' && f_char <= 'Z')
+             { document.getElementById("output").innerHTML="The First character is in Uppercase"}
+            
+             //if first character in string is in lowercase, it will display message
+             else if(f_char >= 'a' && f_char <= 'z')
+             {document.getElementById("output").innerHTML="The First character is in Lowercase"}
+            
+             //if first character in string is number, it will display message
+             else if(f_char >= '0' && f_char <= '9')
+             {document.getElementById("output").innerHTML="The First character is a number"}
+             
+             //if first character in string is not a number, it will display message
+             else if(f_char != '0' && f_char != '9')
+              {document.getElementById("output").innerHTML="It is not a character or not a number"}
+             
+              //if first character in string is not a character, it will display message
+             else if(f_char != 'A' && f_char != 'Z')
+             {document.getElementById("output").innerHTML="It is not a character or not a number"}
+         }
+         </script> 
+        </body> 
+  </html>

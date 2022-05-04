@@ -1,0 +1,60 @@
+/* here I applied styling on id container"first" that will show background image,
+no repetition for bg image, sets height, width, margin and text alignment*/
+#first{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 1200px;
+    text-align: center;
+    margin:auto;
+}
+
+/* It gives color to text enclosed in body element as well as bg color*/
+body{
+    color:maroon;
+    background:rgb(145, 145, 127);
+    
+}
+
+/* It is class selector for button that gives style to button's text*/
+.btn{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+}
+
+/*it gives styling to h1 element by applying bg color, border styling and margin*/
+h1{
+    background-color:rgb(27, 131, 131);
+    color:honeydew;
+    border: 5px  solid floralwhite;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+/*It is id selector used to apply style to outcome message*/
+#output{
+    color:maroon;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: mintcream;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+
+/*it gives color, font style and sets top margin of h2 element*/
+h2{
+    color:saddlebrown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 7%;
+}
+
+/*it is id selector used to apply css properties on footer content*/
+#end{
+    margin-top: 17%;
+    margin-left: 20%;
+    text-align: left;
+    color:black;
+}
